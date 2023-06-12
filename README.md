@@ -22,6 +22,8 @@ The install command for this application is "npm i"
 ## Usage
 Begin by hitting the Get Started button on the homepage. The input a note title and text that is associated with that note. Press the save button in the topo right-hand corner and your saved note will appear on the left side of the sceen.
 
+[Live Site is Here!](https://express-note-taker-1.herokuapp.com/) 
+
 ![Screenshot](./public/assets/images/express.js-note-taker.png)
 ## License
 This project utilized the MIT License. 
