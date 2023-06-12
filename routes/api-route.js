@@ -4,7 +4,7 @@ const uuid = require('../helpers/uuid');
 const fs = require('fs');
 const path = require('path');
 
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/notes.html'))
 });
 
