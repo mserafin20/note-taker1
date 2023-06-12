@@ -5,13 +5,13 @@ const fs = require('fs');
 const path = require('path');
 
 router.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/public/notes.html'))
+  res.sendFile(path.join(__dirname, '../public/notes.html'))
 });
 
-router.get('./notes', (req, res) => res.json(db));
+router.get('/notes', (req, res) => res.json(db));
 
 
-router.post('./notes', (req, res) => {
+router.post('/notes', (req, res) => {
     const {title, text} = req.body;
 
         if(title && text) {
@@ -22,7 +22,7 @@ router.post('./notes', (req, res) => {
 
         const noteStringify = JSON.stringify(db);
 
-        fs.writeFile('./db/db.json', noteStringify, (err) => 
+        fs.writeFile(`./db/db.json`, noteStringify, (err) => 
             err
                 ? console.log(err)
                 : console.log(
@@ -37,5 +37,20 @@ router.post('./notes', (req, res) => {
                 }
 
             });
+
+            // router.delete('/notes/:id', (req, res) => {
+            //     const idDelete = req.params.id;
+            //     const dbDelete = db.filter((note) => note.id !== idDelete);
+            //     const noteStringify = JSON.stringify(dbDelete);
+
+            //     fs.writeFile(`./db/db.json`, noteStringify, (err) => {
+            //         err
+            //             ? console.error(err)
+            //             : console.log(
+            //                 'Note Deleted'
+            //             )
+            //         res.send();
+            //     });
+            // });
 
             module.exports = router;
