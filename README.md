@@ -1,21 +1,40 @@
-# note-taker1
+# note-taker1 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
 
-## User Story 
-AS A small business owner
-I WANT to be able to write and save notes
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
+## Description
 
-## Acceptance Criteria
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a Save icon appears in the navigation at the top of the page
-WHEN I click on the Save icon
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column
-WHEN I click on the Write icon in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+For this project, we were assigned to make a note taker using express.js that takes notes input by the user, and saves them to view for later. 
+
+## Table of Contents
+[Installation](#installation)
+
+  [Usage](#usage)
+
+  [License](#license)
+
+  [Test](#test)
+
+  [Questions](#questions) 
+
+  ## Installation 
+
+The install command for this application is "npm i"
+
+## Usage
+Begin by hitting the Get Started button on the homepage. The input a note title and text that is associated with that note. Press the save button in the topo right-hand corner and your saved note will appear on the left side of the sceen.
+
+![Screenshot](./public/assets/images/express.js-note-taker.png)
+## License
+This project utilized the MIT License. 
+
+  For more information see link: (https://opensource.org/licenses/MIT)
+
+## Tests
+N/A
+## Questions
+
+  ### Additional information and links are below, including my personal github account and email for contact information:
+
+  [Github](https://github.com/mserafin20)
+
+  [Email](mailto:mmserafin20@gmail.com)
+
